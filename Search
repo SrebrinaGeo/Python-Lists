@@ -1,0 +1,14 @@
+count_strings = int(input())
+word = input()
+strings_list = []
+
+for string in range(count_strings):
+    current_string = input()
+    strings_list.append(current_string)
+print(strings_list)
+
+for string in range(len(strings_list)-1, -1, -1):
+    element = strings_list[string]
+    if word not in element:
+        strings_list.remove(element)
+print(strings_list)
